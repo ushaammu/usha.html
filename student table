@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Front End Dev</title>
+        </head>
+    <body>
+        <h1><b>students details</b></h1>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>usn</th>
+                <th>course</th>
+                <th>branch</th>
+                <th>ph no</th>
+            </tr>
+            <tr>
+            <td>usha</td>
+            <td>01</td>
+            <td>b.e</td>
+            <td>ise</td>
+            <td>9113967368</td></tr>
+        </table>
+    </body>
+</html>

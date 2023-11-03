@@ -1,0 +1,22 @@
+.flag{
+    background-color: yellow;
+    height: 250px;
+    width: 950px;
+}
+.message{
+    background-color:red;
+    height: 250px;
+    width: 950px;
+}
+.move{
+    position: absolute;
+    animation: moveRightToLeft  10s linear infinite;
+}
+@keyframes moveRightToLeft{
+    0%{Right:-1300px;}
+    100%{Right:1300px;}
+}
+body{
+    background-image: url(rose2usha.jpeg);
+    background-size:15%;
+}

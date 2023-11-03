@@ -1,0 +1,61 @@
+body{
+    background-image: url(blooddonationimg.jpg);
+backface-visibility: visible;
+    background-size: 1790px;
+    background-position: center;
+}
+h1{
+    border-top: 100px;
+    color: red;
+    bottom: 300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 5px -8px 1px rgb(115, 0, 255);
+    text-transform: uppercase;
+    outline:2px dotted aqua;
+    position:static;
+}
+img{
+    opacity:10%;
+}
+
+.form{
+    border: 2px solid;
+    border-radius: 35px;
+    border-style: double;
+    border-width: 6px;
+    width: 410px;
+    background-color:#FFF0EF;
+    border-color: #FF8BA0;
+    color: red;
+}
+.form input{
+    width: 290px;
+    height: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    border-color: #FF8BA0;
+    background-image: url(/pngtree-geometric-gradient-creative-blood-donation-poster-background-material-image_134137.jpg);
+    
+    
+}
+button{
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image: url(/pngtree-geometric-gradient-creative-blood-donation-poster-background-material-image_134137.jpg);
+}
+a:hover{
+    color:darkcyan;
+    text-decoration:double;
+}
+p{
+    text-indent: 5cm;
+}

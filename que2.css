@@ -1,0 +1,21 @@
+.ushaputti{
+    background-color: crimson;
+    color:aliceblue;
+}
+.heading{
+    background-color: cyan;
+    color:red ;
+}
+#usha{
+    background-color: blue;
+    color:goldenrod;
+}
+body{
+        background-image:url(teddybear.jpg);
+        background-size:250px ;
+        background-size: contain;
+        background-size: auto;
+        background-repeat: inherit;
+    }
+
+

@@ -1,0 +1,20 @@
+h1{
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Times New Roman';
+   
+}
+#outer{
+  color: red;
+  font-size: 20px;
+}
+#inner{
+    color: aqua;
+    font-size: 40px;
+}
+body{
+    background-image: url(teddybear.jpg);
+    color:blue;
+    background-color: brown;
+}

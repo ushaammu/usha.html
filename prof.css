@@ -1,0 +1,37 @@
+.name {
+    color: #000;
+    text-align: center;
+}
+
+.main {
+    width: 75%;
+    background-color: #caf0f8;
+
+}
+
+.about {
+    width: 50%;
+    background-color: #00b4d8;
+}
+
+.education-details {
+    width: 50%;
+    background-color: #0077b6;
+}
+
+.hobbies {
+    width: 50%;
+    background-color: #03045e;
+}
+
+div {
+    color: white;
+    margin: 20px auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+    float: left;
+}

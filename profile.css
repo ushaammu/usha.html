@@ -1,0 +1,31 @@
+img{
+    border-radius: 50%;
+    color: darkgrey;
+    background-color: chartreuse;
+    background-size: contain;
+    height:150px;
+    width:150px;
+    float:left;
+}
+body{
+    background-image: url(rose2usha.jpeg);
+    background-size: cover;
+}
+
+ol{
+    color: red;
+}
+ul{
+    color:brown;
+}
+
+h4{
+    background-color: aqua;
+    color:darkgreen;
+}
+h1{
+    color: blueviolet;
+}
+h2{
+    color:darkcyan;
+}

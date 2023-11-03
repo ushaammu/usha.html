@@ -1,0 +1,12 @@
+body{
+    background-color: darkgoldenrod;
+}
+h1{
+    background-color: lawngreen;
+    color:deeppink;
+}
+body{
+    background-image:url(teddybear.jpg);
+    background-size:500px ;
+    background-size: cover;
+}

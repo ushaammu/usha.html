@@ -1,0 +1,38 @@
+body{
+    background-image: url(blooddonationimg.jpg);
+    backface-visibility: visible;
+    background-size: 1390px;
+    background-position: center;
+}
+h1{
+    border-top: 100px;
+    color:red;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    bottom:300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 1px blue;
+    outline: 3px dotted greenyellow;
+}
+img{
+    border-radius: 50%;
+    color: darkgrey;
+    background-color: chartreuse;
+    background-size: contaI;
+    height:150px;
+    width:150px;
+    float:left;
+}
+.form{
+    border: 2px solid;
+    border-radius:5px;
+    border-style: double;
+    border-width: 6px;
+    width:350px;
+    background-color:beige;
+    border-color: red;
+    color: brown;
+}
+
