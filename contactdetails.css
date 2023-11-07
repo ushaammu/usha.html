@@ -1,0 +1,70 @@
+body{
+    background-image: url(./ushaputti.jpg);
+backface-visibility: visible;
+    background-size: 90px;
+    background-position: top-left;
+    background-size: cover;
+}
+.container{
+    width: 500px;
+    padding: 40px;
+    border-radius: 30%;
+    margin: 0;
+    text-align: center;
+    background: pink;
+}
+h1{
+    border-top: 100px;
+    color: red;
+    bottom: 300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 6px -8px 1px rgb(115, 0, 255);
+    text-transform: uppercase;
+    outline:2px dotted aqua;
+    position:static;
+}
+img{
+    opacity:10%;
+}
+
+.form{
+    
+    border: 2px solid;
+    border-radius: 35px;
+    border-style: double;
+    border-width: 6px;
+    width: 410px;
+    background-color:#222;
+    border-color: #FF8BA0;
+    color: red;
+   
+   
+}
+.form input{
+    border-radius: 20px;
+    width: 290px;
+    height: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    border-color: #FF8BA0;
+    background-color:blueviolet;
+   
+
+    
+    
+}
+button{
+    border-radius: 20px;
+    width: 150px;
+    background-color:yellow;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+    
+}

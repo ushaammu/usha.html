@@ -1,0 +1,132 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 120px;
+      background-image: url(./unitconvimg.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .converter {
+      width: 300px;
+      border: 1px solid black;
+      padding: 10px;
+      box-shadow: 2px 2px 5px gray;
+    }
+
+    .input {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: blueviolet;
+      color:darkorange;
+    }
+
+    .select {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: blueviolet;
+    }
+
+    .output {
+      width: 100%;
+      margin-bottom: 10px;
+      font-weight: bold;
+      background-color: aquamarine;
+    }
+
+    .button {
+      width: 100%;
+      background-color: green;
+      color: white;
+      padding: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Unit Converter</h1>
+  <div class="container">
+    <div class="converter">
+      <input type="number" id="input" class="input" placeholder="Enter a value" />
+      <select id="from" class="select">
+        <option value="m">Meter</option>
+        <option value="cm">Centimeter</option>
+        <option value="mm">Millimeter</option>
+        <option value="km">Kilometer</option>
+        <option value="in">Inch</option>
+        <option value="ft">Foot</option>
+        <option value="yd">Yard</option>
+        <option value="mi">Mile</option>
+      </select>
+      <select id="to" class="select">
+        <option value="m">Meter</option>
+        <option value="cm">Centimeter</option>
+        <option value="mm">Millimeter</option>
+        <option value="km">Kilometer</option>
+        <option value="in">Inch</option>
+        <option value="ft">Foot</option>
+        <option value="yd">Yard</option>
+        <option value="mi">Mile</option>
+      </select>
+      <div id="output" class="output"></div>
+      <button id="convert" class="button">Convert</button>
+    </div>
+  </div>
+  <script>
+    // Get the elements from the document
+    var input = document.getElementById("input");
+    var from = document.getElementById("from");
+    var to = document.getElementById("to");
+    var output = document.getElementById("output");
+    var convert = document.getElementById("convert");
+
+    // Define the conversion factors for each unit
+    var factors = {
+      m: 1,
+      cm: 0.01,
+      mm: 0.001,
+      km: 1000,
+      in: 0.0254,
+      ft: 0.3048,
+      yd: 0.9144,
+      mi: 1609.344
+    };
+
+    // Define a function to convert the input value to the output value
+    function convertValue() {
+      // Get the input value and the selected units
+      var inputValue = parseFloat(input.value);
+      var fromUnit = from.value;
+      var toUnit = to.value;
+
+      // Check if the input value is a valid number
+      if (isNaN(inputValue)) {
+        // Display an error message
+        output.innerHTML = "Please enter a valid number";
+      } else {
+        // Calculate the output value by multiplying the input value by the ratio of the conversion factors
+        var outputValue = inputValue * (factors[fromUnit] / factors[toUnit]);
+
+        // Display the output value with two decimal places and the unit symbol
+        output.innerHTML = outputValue.toFixed(2) + " " + toUnit;
+      }
+    }
+
+    // Add an event listener to the convert button to call the convertValue function when clicked
+    convert.addEventListener("click", convertValue);
+  </script>
+</body>
+</html>
+

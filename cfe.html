@@ -1,0 +1,118 @@
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tea and Coffee Count with Cost</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Count</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Tea</td>
+            <td id="tea-count">0</td>
+            <td id="tea-price">10</td>
+            <td id="tea-total">0</td>
+        </tr>
+        <tr>
+            <td>coffee</td>
+            <td id="coffee-count">0</td>
+            <td id="coffee-price">15</td>
+            <td id="coffee-total">0</td>
+        </tr>
+        <tr>
+            <td>horlicks</td>
+            <td id="horlicks-count">0</td>
+            <td id="horlicks-price">10</td>
+            <td id="horlicks-total">0</td>
+        </tr> <tr>
+            <td>badammilk</td>
+            <td id="badammilk-count">0</td>
+            <td id="badammilk-price">10</td>
+            <td id="badammilk-total">0</td>
+        </tr> <tr>
+            <td>boost</td>
+            <td id="boost-count">0</td>
+            <td id="boost-price">10</td>
+            <td id="boost-total">0</td>
+        </tr>
+            
+        <tr>
+            <td>Grand Total</td>
+            <td id="grand-count">0</td>
+            <td></td>
+            <td id="grand-total">0</td>
+        </tr>
+    </table>
+    <button onclick="addTea()">Add Tea</button>
+    <button onclick="addCoffee()">Add Coffee</button>
+    <button onclick="addTea()">Add horlicks</button>
+    <button onclick="addTea()">Add Tea</button>
+    <button onclick="addTea()">Add Tea</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        function addTea() {
+            // get the current count and price of tea
+            var teaCount = document.getElementById("tea-count").innerHTML;
+            var teaPrice = document.getElementById("tea-price").innerHTML;
+            // increment the count and update the total
+            teaCount++;
+            var teaTotal = teaCount * teaPrice;
+            // update the HTML elements
+            document.getElementById("tea-count").innerHTML = teaCount;
+            document.getElementById("tea-total").innerHTML = teaTotal;
+            // update the grand total
+            updateGrandTotal();
+        }
+
+        function addCoffee() {
+            // get the current count and price of coffee
+            var coffeeCount = document.getElementById("coffee-count").innerHTML;
+            var coffeePrice = document.getElementById("coffee-price").innerHTML;
+            // increment the count and update the total
+            coffeeCount++;
+            var coffeeTotal = coffeeCount * coffeePrice;
+            // update the HTML elements
+            document.getElementById("coffee-count").innerHTML = coffeeCount;
+            document.getElementById("coffee-total").innerHTML = coffeeTotal;
+            // update the grand total
+            updateGrandTotal();
+        }
+
+        function reset() {
+            // reset the counts and totals to zero
+            document.getElementById("tea-count").innerHTML = 0;
+            document.getElementById("tea-total").innerHTML = 0;
+            document.getElementById("coffee-count").innerHTML = 0;
+            document.getElementById("coffee-total").innerHTML = 0;
+            document.getElementById("grand-count").innerHTML = 0;
+            document.getElementById("grand-total").innerHTML = 0;
+        }
+
+        function updateGrandTotal() {
+            // get the current counts and totals of tea and coffee
+            var teaCount = document.getElementById("tea-count").innerHTML;
+            var teaTotal = document.getElementById("tea-total").innerHTML;
+            var coffeeCount = document.getElementById("coffee-count").innerHTML;
+            var coffeeTotal = document.getElementById("coffee-total").innerHTML;
+            // calculate the grand count and total
+            var grandCount = parseInt(teaCount) + parseInt(coffeeCount);
+            var grandTotal = parseInt(teaTotal) + parseInt(coffeeTotal);
+            // update the HTML elements
+            document.getElementById("grand-count").innerHTML = grandCount;
+            document.getElementById("grand-total").innerHTML = grandTotal;
+        }
+    </script>
+</body>
+</html>

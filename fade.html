@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fade.css">
+</head>
+<body>
+    <img src="./ushafb.jpg">
+    <button onclick="fadeIn()">Fade In</button>
+     <button onclick="fadeOut()">Fade Out</button>
+     <sript>
+        const image=document.getElementById("myImage");
+        function fadeIn()
+        {
+            image.style.opacity=0.5;
+        }
+        function fadeOut()
+        {
+            image.style.opacity=1;
+        }
+     </sript>
+</body>
+</html>

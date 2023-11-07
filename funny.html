@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url(./guessimg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        button{
+            background-color: blueviolet;
+            color: aqua;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#p1").click(function(){
+          alert("haa haa u cant open😂😂😒😒😒.....!");
+        });
+    });
+    </script>
+
+    <script>
+       $(document).ready(function(){
+        $("p").on({
+            mouseenter:function(){
+                $(this).css("background-color","orange").fadeOut(150);
+            },
+            mouseleave:function(){
+                $(this).css("background-color","green");
+            } ,
+            click:function(){
+                $(this).css("background-color","blue");
+            } 
+        })
+    })
+    </script>
+</head>
+    <body>
+<p>guess what i bought for u???????????</p>
+<button id="p1">close</button>
+    </body>
+
+</html>

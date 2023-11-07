@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USHA</title>
+    <link rel="stylesheet" href="tea.css">
+
+   
+    <div class="image-container">
+       
+        <div class="overlay-text">   
+          <style>
+            body {
+                background-image: url(./cfeimg.jpg);
+                background-size: cover;
+              font-family: Arial, sans-serif;
+              background-color: aqua;
+              color:aquamarine;
+              background-position: center;
+            }
+            .container {
+              text-align: center;
+              margin-top: 20px;
+            }
+          </style>
+    </head>
+        <body>
+         <center> <h2 style="background-color: darkorange;color:greenyellow;">UD Tea and Coffee center</h2></center>
+          
+          <div class="container">
+            <label>
+              <input type="radio" name="drink" value="tea"> tea
+            </label> 
+            <label>
+                <input type="radio" name="drink" value="coffee"> coffee
+              </label>
+              <label>
+                <input type="radio" name="drink" value="boost">boost
+              </label><label>
+                <input type="radio" name="drink" value="horlicks"> horlicks
+              </label><label>
+                <input type="radio" name="drink" value="badammilk"> badammilk
+              </label>
+            <br>
+            <button onclick="countDrink()">Add Drink</button>
+            <button onclick="Total()" >Totalbill</button>
+            <p>tea Count: <span id="teaCount">0</span></p>
+            <p>Coffee Count: <span id="coffeeCount">0</span></p>
+            <p>boost Count: <span id="boostCount">0</span></p>
+            <p>horlicks Count: <span id="horlicksCount">0</span></p>
+            <p>badammilk Count: <span id="badammilkCount">0</span></p>
+            <p>Totalbill Count: <span id="Bill">0</span></p>
+          </div>
+         <script>
+            let teaCount = 0;
+            let coffeeCount = 0;
+            let boostCount=0;
+            let horlicksCount=0;
+            let badammilkCount=0;
+   
+            let tearate= 10;
+            let coffeerate = 12;
+            let boostrate=14;
+            let horlicksrate=15;
+            let badammilkrate=20;
+          
+            function countDrink() {
+              const selectedDrink = document.querySelector('input[name="drink"]:checked');
+              if (selectedDrink) {
+                const drinkType = selectedDrink.value;
+                if (drinkType === 'tea') {
+                  teaCount++;
+                   document.getElementById('teaCount').textContent = teaCount;
+                } else if (drinkType === 'coffee') {
+                  coffeeCount++;
+                  document.getElementById('coffeeCount').textContent = coffeeCount;
+                }
+                else if (drinkType === 'boost') {
+                  boostCount++;
+                  document.getElementById('boostCount').textContent = boostCount;
+                }
+                else if (drinkType === 'horlicks') {
+                  horlicksCount++;
+                  document.getElementById('horlicksCount').textContent = horlicksCount;
+                }
+                else if (drinkType === 'badammilk') {
+                  badammilkCount++;
+                  document.getElementById('badammilkCount').textContent = badammilkCount;
+                }
+                }
+            }
+         function Total()
+         {
+            var total=parseInt(document.getElementById("Bill").innerHTML);
+            total +=parseInt(document.getElementById("teaCount").innerHTML)*parseInt(tearate);
+            total +=parseInt(document.getElementById("coffeeCount").innerHTML)*parseInt(coffeerate);
+            total +=parseInt(document.getElementById("boostCount").innerHTML)*parseInt(boostrate);
+            total +=parseInt(document.getElementById("horlicksCount").innerHTML)*parseInt(horlicksrate);
+            total +=parseInt(document.getElementById("badammilkCount").innerHTML)*parseInt(badammilkrate);
+            document.getElementById("Bill").innerHTML=total;
+         }            
+          </script>
+
+        </body>
+        </html>
+    </div>
+
+    <script src="tea.js"></script>
+    <img src="./cfeteaimg.jpg" alt="image">
+
+</body>
+</html>
